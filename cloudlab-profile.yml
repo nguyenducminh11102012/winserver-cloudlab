@@ -1,0 +1,18 @@
+profile:
+  name: windows-server-test
+  description: Deploy a Windows Server ISO onto a raw CloudLab node.
+
+resources:
+  nodes:
+    - name: node0
+      type: raw-pc
+      os: none
+
+instructions:
+  boot:
+    method: iso
+    iso_url: http://your-domain.com/windows-server-2019.iso
+    config: |
+      boot from ISO
+      setup RDP
+      install cloud drivers
