@@ -1,26 +1,51 @@
-# Windows Server Deployment on CloudLab
+# 🚀 Windows Server Deployment on CloudLab
 
-This is an experimental project by a student researcher to evaluate the deployment and performance of Windows Server instances on bare-metal infrastructure provided by CloudLab.
+> A hands-on experiment in deploying Windows Server on bare-metal infrastructure using CloudLab resources.
 
-## Objectives
+---
 
-- Learn how to provision bare-metal nodes
-- Automate Windows Server installation using custom ISO
-- Evaluate RDP performance and networking setup
-- Compare Windows vs Linux deployment overhead
+## 📌 Overview
 
-## Methodology
+This project explores the process of provisioning **Windows Server 2019** on **raw physical nodes** offered by [CloudLab](https://www.cloudlab.us/), for educational and benchmarking purposes. It serves as a learning initiative to understand:
 
-This project uses the CloudLab "Raw PC" profile to boot a custom Windows Server ISO. After provisioning, Windows is configured for remote access and monitored for network and CPU usage during benchmark tasks.
+- ✅ Operating system deployment on bare-metal
+- ✅ PXE boot mechanisms
+- ✅ Windows networking & remote access
+- ✅ RDP performance testing on real hardware
 
-## Technologies Used
+---
 
-- Windows Server 2019 Evaluation
-- PXE boot
-- ipxe / virt-install
-- SSH tunneling and RDP
-- YAML provisioning templates (CloudLab XML/YAML format)
+## 🎯 Objectives
 
-## Status
+| Goal                     | Status |
+|--------------------------|--------|
+| Provision raw node       | ✅ Done |
+| Boot custom ISO          | ✅ Done |
+| Enable RDP access        | ✅ Done |
+| Automate setup via PXE   | 🔄 In Progress |
+| Benchmark performance    | 🔄 Planned |
 
-🟢 Experiment in progress. First deployment attempt using raw-node + custom ISO successful.
+---
+
+## ⚙️ Technology Stack
+
+- 💿 **Windows Server 2019 Evaluation**
+- 🧰 **PXE / iPXE booting**
+- 🐧 Linux environment for provisioning
+- 🐳 Docker-based helper tools (for optional setup)
+- 🖥️ Real bare-metal nodes via CloudLab
+
+---
+
+## 🧪 Methodology
+
+1. **Provision a raw-pc node** with no OS
+2. **Boot from custom ISO** using `qemu` or `PXE`
+3. Complete Windows installation & enable **RDP**
+4. Measure RDP latency, system load, and network throughput
+5. Compare with Linux node setup
+
+---
+
+## 📁 Repository Structure
+
