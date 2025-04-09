@@ -1,0 +1,9 @@
+#!ipxe
+dhcp
+set base-url http://your-domain.com/iso
+kernel ${base-url}/wimboot
+initrd ${base-url}/bootmgr bootmgr
+initrd ${base-url}/boot/bcd BCD
+initrd ${base-url}/boot/boot.sdi boot.sdi
+initrd ${base-url}/sources/boot.wim boot.wim
+boot
