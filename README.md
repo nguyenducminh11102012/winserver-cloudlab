@@ -1,4 +1,3 @@
-# winserver-cloudlab
 # Windows Server Deployment on CloudLab
 
 This is an experimental project by a student researcher to evaluate the deployment and performance of Windows Server instances on bare-metal infrastructure provided by CloudLab.
